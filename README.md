@@ -245,8 +245,8 @@ Le projet suit les 3 étapes de l'énoncé (`project.md`) :
 - [x] Chargement du dataset
 - [x] Aperçu des données et types
 - [x] Statistiques descriptives (moyenne, écart-type, min/max)
-- [ ] Visualisations : boxplots, scatter plots
-- [ ] Vérification et traitement des valeurs manquantes
+- [x] Visualisations : boxplots, scatter plots
+- [x] Vérification et traitement des valeurs manquantes
 
 ### 🔲 Étape 2 — ACP (`project.md` §2.3)
 - [ ] Calcul des variances → décision de standardisation
