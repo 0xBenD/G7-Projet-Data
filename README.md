@@ -7,11 +7,20 @@ Analyse de la consommation électrique de la ville de Tétouan (Maroc, été 201
 
 ## Installation
 
+Commence par cloner le dépôt :
+
 ```bash
-# Cloner le dépôt
 git clone <url-du-repo>
 cd G7-Projet-Data
+```
 
+Ensuite, choisis **une** des deux méthodes ci-dessous selon ce que tu as installé.
+
+---
+
+### Option A — `venv` (Python standard)
+
+```bash
 # Créer et activer l'environnement virtuel
 python3 -m venv venv
 source venv/bin/activate        # macOS/Linux
@@ -19,6 +28,40 @@ venv\Scripts\activate           # Windows
 
 # Installer les dépendances
 pip install -r requirements.txt
+```
+
+Pour désactiver l'environnement quand tu as fini :
+```bash
+deactivate
+```
+
+---
+
+### Option B — `conda` (Anaconda / Miniconda)
+
+Si tu as installé [Anaconda](https://www.anaconda.com/) ou [Miniconda](https://docs.conda.io/en/latest/miniconda.html), utilise conda à la place.
+
+```bash
+# Créer un environnement dédié au projet
+conda create -n g7-data python=3.13
+
+# Activer l'environnement
+conda activate g7-data
+
+# Installer les dépendances
+pip install -r requirements.txt
+```
+
+> **Pourquoi `pip` et pas `conda install` ?** Certaines librairies du `requirements.txt` sont plus à jour sur PyPI que sur les dépôts conda. `pip` dans un environnement conda fonctionne très bien.
+
+Pour désactiver l'environnement quand tu as fini :
+```bash
+conda deactivate
+```
+
+**Avantage de conda** : Jupyter Notebook est souvent déjà inclus avec Anaconda — pas besoin de l'installer séparément. Lance directement :
+```bash
+jupyter notebook
 ```
 
 ---
