@@ -249,22 +249,22 @@ Le projet suit les 3 étapes de l'énoncé (`project.md`) :
 - [x] Vérification et traitement des valeurs manquantes
 
 ### 🔲 Étape 2 — ACP (`project.md` §2.3)
-- [ ] Calcul des variances → décision de standardisation
-- [ ] Matrice de corrélation
-- [ ] ACP avec `sklearn.decomposition.PCA` (variables : Temperature, Humidity, WindSpeed, PCZone1, PCZone2, PCZone3)
-- [ ] Pourcentage de variance expliquée (PVE) + scree plot
-- [ ] Cercle des corrélations (biplot)
-- [ ] Interprétation des deux premières composantes principales
+- [x] Calcul des variances → décision de standardisation
+- [x] Matrice de corrélation
+- [x] ACP avec `sklearn.decomposition.PCA` (variables : Temperature, Humidity, WindSpeed, PCZone1, PCZone2, PCZone3)
+- [x] Pourcentage de variance expliquée (PVE) + scree plot
+- [x] Cercle des corrélations (biplot)
+- [x] Interprétation des deux premières composantes principales
 
 ### 🔲 Étape 3 — Régression linéaire (`project.md` §2.4)
-- [ ] Corrélations target/prédicteurs → choix du meilleur prédicteur simple
-- [ ] Régression linéaire simple (PCZone1 ~ meilleur prédicteur)
+- [x] Corrélations target/prédicteurs → choix du meilleur prédicteur simple
+- [x] Régression linéaire simple (PCZone1 ~ meilleur prédicteur)
   - Estimations β̂₀, β̂₁ et interprétation
   - Intervalle de confiance à 95% pour β₁
   - Test de Student (pente nulle)
   - R²
-- [ ] Sélection de variables par *Best Subset Selection* (`itertools.combinations`, R² ajusté)
-- [ ] Régression multiple avec le meilleur sous-ensemble
+- [x] Sélection de variables par *Best Subset Selection* (`itertools.combinations`, R² ajusté)
+- [x] Régression multiple avec le meilleur sous-ensemble
   - Interprétation des coefficients
   - Tests d'hypothèse sur chaque coefficient
   - Prédiction : T=26°C, H=65%, WS=4.2 Km/h, PCZone2=18840 KW, PCZone3=25700 KW
